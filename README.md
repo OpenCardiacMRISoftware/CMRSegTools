@@ -10,15 +10,15 @@ Instructional videos for getting started with CMRSegTools.
 
 ### Getting started
 
-[![Getting started](./doc/CMRSegTools-YouTube01.png)](https://youtu.be/aXAGeKq-nS0 "Getting started")
+[![Getting started](./doc/screenshots/CMRSegTools-YouTube01.png)](https://youtu.be/aXAGeKq-nS0 "Getting started")
 
 ### T1, ECV multislice CMR post-processing
 
-[![T1, ECV multislice CMR post-processing](./doc/CMRSegTools-YouTube02.png)](https://youtu.be/RohwXXmx8M4 "T1, ECV multislice CMR post-processing")
+[![T1, ECV multislice CMR post-processing](./doc/screenshots/CMRSegTools-YouTube02.png)](https://youtu.be/RohwXXmx8M4 "T1, ECV multislice CMR post-processing")
 
 ### Infarct size quantification
 
-[![Infarct size quantification](./doc/CMRSegTools-YouTube03.png)](https://youtu.be/28ryKKthZGY "Infarct size quantification")
+[![Infarct size quantification](./doc/screenshots/CMRSegTools-YouTube03.png)](https://youtu.be/28ryKKthZGY "Infarct size quantification")
 
 
 

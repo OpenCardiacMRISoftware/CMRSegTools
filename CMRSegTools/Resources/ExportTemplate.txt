@@ -1,0 +1,24 @@
+Analysis Date	___analysis_date____
+Patient Name	___patient_name____
+Acquisition Date	___aquisistion_date___
+Series Number	___series_number___
+Series Description	___series_description___
+Sequence Name ___sequence_name___
+
+
+Short Report
+
+V mass (g)	Total MI mass (g)	Total Non-MI mass (g)	Total NR (g)	Total MI mass (%)	Total Non-MI mass (%)	Total NR(%)	Total LV vol (ml)	Total MI vol (ml)	Total non-MI vol (ml)	Total NR vol (ml)
+1230001	1230002	1230003	1230004	1230005	1230006	1230007	1230008	1230009	1230010	1230011
+
+ROI Type	area	mean	stdev	IQR	median	max	min
+Myocardium	1300001	1300002	1300003	1300004	1300005	1300006	1300007
+MI 	1310001	1310002	1310003	1310004	1310005	1310006	1310007
+Non-MI	1320001	1320002	1320003	1320004	1320005	1320006	1320007
+NR	1330001	1330002	1330003	1330004	1330005	1330006	1330007
+
+
+
+Extended Report
+
+Slice Number	Sectors	MI mass (g)	Non-MI mass (g)	NR (g)	MI mass (%)	Non-MI mass (%)	NR (%)	LV vol  (ml)	MI vol (ml)	Non-MI vol  (ml)	NR vol (ml)	MI mass area (cm2)	Non-MI mass area (cm2)	NR area (cm2)

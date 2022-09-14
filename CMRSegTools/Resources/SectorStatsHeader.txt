@@ -1,0 +1,3 @@
+
+
+Slice Number	Sectors	ROI Type	Area	Mean	StdDev	IQR	Median	Max	Min

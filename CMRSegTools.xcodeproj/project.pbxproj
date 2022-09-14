@@ -1,0 +1,1153 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		7165ABDC205961270061B619 /* Submodules */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7165ABDD205961270061B619 /* Build configuration list for PBXAggregateTarget "Submodules" */;
+			buildPhases = (
+				7165ABE1205961470061B619 /* Submodules */,
+			);
+			dependencies = (
+			);
+			name = Submodules;
+			productName = Submodules;
+		};
+		7165ABE22059641A0061B619 /* DCMTK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7165ABE32059641A0061B619 /* Build configuration list for PBXAggregateTarget "DCMTK" */;
+			buildPhases = (
+				7165ABE6205964270061B619 /* CMake */,
+				7165ABE92059644A0061B619 /* Make */,
+			);
+			dependencies = (
+				7165ABE82059643D0061B619 /* PBXTargetDependency */,
+			);
+			name = DCMTK;
+			productName = DCMTK;
+		};
+		7165ABEC20596C0C0061B619 /* VTK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7165ABED20596C0C0061B619 /* Build configuration list for PBXAggregateTarget "VTK" */;
+			buildPhases = (
+				7165ABF220596C200061B619 /* CMake */,
+				7165ABF320596C290061B619 /* Make */,
+			);
+			dependencies = (
+				7165ABF120596C150061B619 /* PBXTargetDependency */,
+			);
+			name = VTK;
+			productName = VTK;
+		};
+		7165ABF620596EF90061B619 /* ITK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7165ABF720596EF90061B619 /* Build configuration list for PBXAggregateTarget "ITK" */;
+			buildPhases = (
+				7165ABFE20596F110061B619 /* CMake */,
+				7165ABFF20596F190061B619 /* Make */,
+			);
+			dependencies = (
+				7165ABFB20596F000061B619 /* PBXTargetDependency */,
+			);
+			name = ITK;
+			productName = ITK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		103821F117BB942F006234EE /* hmrfEm.mm in Sources */ = {isa = PBXBuildFile; fileRef = 103821F017BB942F006234EE /* hmrfEm.mm */; };
+		104DEC0F176B47DE00556051 /* hsu.mm in Sources */ = {isa = PBXBuildFile; fileRef = 104DEC0E176B47DE00556051 /* hsu.mm */; };
+		10572404172E91D8001F1E27 /* CMRHistogramWindowController+Segmentation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 10572403172E91D8001F1E27 /* CMRHistogramWindowController+Segmentation.mm */; };
+		10725A79172FC46A00561EB5 /* CMRHistogramWindowController+Importer.m in Sources */ = {isa = PBXBuildFile; fileRef = 10725A78172FC46A00561EB5 /* CMRHistogramWindowController+Importer.m */; };
+		10725A7D172FCE2E00561EB5 /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 10725A7C172FCE2E00561EB5 /* Parser.m */; };
+		108C5A6C17BA5508000E9B00 /* gaussianMixtureModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 108C5A6B17BA5508000E9B00 /* gaussianMixtureModel.mm */; };
+		4F16EB3816666B3900A8BFF7 /* BEAS2DPolarCoupled.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 4F16EB2D16666B3900A8BFF7 /* BEAS2DPolarCoupled.cxx */; };
+		4F16EB3916666B3900A8BFF7 /* DoubleImageAccess.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 4F16EB2F16666B3900A8BFF7 /* DoubleImageAccess.cxx */; };
+		4F16EB3A16666B3900A8BFF7 /* Local2PhasesBEAS2DPolarCoupled.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 4F16EB3116666B3900A8BFF7 /* Local2PhasesBEAS2DPolarCoupled.cxx */; };
+		4F16EB3B16666B3900A8BFF7 /* Vec.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 4F16EB3416666B3900A8BFF7 /* Vec.cxx */; };
+		4F16EB3C16666B3900A8BFF7 /* vtkOptimizedImageData.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 4F16EB3616666B3900A8BFF7 /* vtkOptimizedImageData.cxx */; };
+		4F16EB4716666E8100A8BFF7 /* CMRHistogramWindowController+BEASSegmenter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4F16EB4616666E8100A8BFF7 /* CMRHistogramWindowController+BEASSegmenter.mm */; };
+		4F24E947142E290400A8F60A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F24E946142E290400A8F60A /* Cocoa.framework */; };
+		4F24E951142E290400A8F60A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F24E94F142E290400A8F60A /* InfoPlist.strings */; };
+		4F24E962142E292600A8F60A /* CMRSegTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F24E95C142E292600A8F60A /* CMRSegTools.m */; };
+		4F24E968142E297000A8F60A /* OsiriX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F24E967142E297000A8F60A /* OsiriX.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		4F38918816F9F2EB0011AD38 /* CMRSegToolsGrowRegionStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38918716F9F2EA0011AD38 /* CMRSegToolsGrowRegionStep.m */; };
+		4F52E75E16270BA2004C2F96 /* CMRHistogramWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F52E75C16270BA2004C2F96 /* CMRHistogramWindowController.m */; };
+		4F52E75F16270BA2004C2F96 /* CMRHistogramWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F52E75D16270BA2004C2F96 /* CMRHistogramWindowController.xib */; };
+		4F52E76316270D0A004C2F96 /* CMRHistogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F52E76216270D0A004C2F96 /* CMRHistogramView.m */; };
+		4F8BFD1D1795AB82008F7417 /* CMRHiResFloatVolumeData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8BFD1C1795AB82008F7417 /* CMRHiResFloatVolumeData.m */; };
+		4F8BFD2017982EB6008F7417 /* CMRTextROI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8BFD1F17982EB6008F7417 /* CMRTextROI.m */; };
+		4F97C25F169AC5390027B365 /* CMRSegToolsStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F97C25E169AC5390027B365 /* CMRSegToolsStep.m */; };
+		4F97C263169AC63A0027B365 /* CMRSegToolsDrawROIStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F97C262169AC63A0027B365 /* CMRSegToolsDrawROIStep.m */; };
+		4FAFA50D180DC03E00D74B8A /* CMRSegToolsPreferencePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAFA50C180DC03E00D74B8A /* CMRSegToolsPreferencePanel.m */; };
+		4FAFA50F180DC09400D74B8A /* CMRSegToolsPreferencePanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FAFA50E180DC09400D74B8A /* CMRSegToolsPreferencePanel.xib */; };
+		4FB983C417295D790078AA17 /* BEAS.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB983BA17295D790078AA17 /* BEAS.png */; };
+		4FB983C517295D790078AA17 /* Draw Endocardium.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB983BB17295D790078AA17 /* Draw Endocardium.png */; };
+		4FB983C617295D790078AA17 /* Draw Epicardium.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB983BC17295D790078AA17 /* Draw Epicardium.png */; };
+		4FB983C717295D790078AA17 /* Draw Exclude Region.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB983BD17295D790078AA17 /* Draw Exclude Region.png */; };
+		4FB983C817295D790078AA17 /* Draw Include Region.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB983BE17295D790078AA17 /* Draw Include Region.png */; };
+		4FB983C917295D790078AA17 /* Draw No-Reflow Region.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB983BF17295D790078AA17 /* Draw No-Reflow Region.png */; };
+		4FB983CA17295D790078AA17 /* Draw Remote Region.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB983C017295D790078AA17 /* Draw Remote Region.png */; };
+		4FB983CB17295D790078AA17 /* Grow Include Region.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB983C117295D790078AA17 /* Grow Include Region.png */; };
+		4FB983CC17295D790078AA17 /* Grow No-Reflow Region.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB983C217295D790078AA17 /* Grow No-Reflow Region.png */; };
+		4FB983CD17295D790078AA17 /* Quick Draw.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB983C317295D790078AA17 /* Quick Draw.png */; };
+		4FCC398916FA2006001FEA40 /* CMRSegToolsQuickDrawStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC398816FA2006001FEA40 /* CMRSegToolsQuickDrawStep.m */; };
+		4FCC398B16FB296B001FEA40 /* CMRSegToolsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC398A16FB296B001FEA40 /* CMRSegToolsIcon.png */; };
+		4FE2613017E662E00005294A /* ExportTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4FE2612F17E662E00005294A /* ExportTemplate.txt */; };
+		4FE2613217E674800005294A /* ExtendedReportTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4FE2613117E674800005294A /* ExtendedReportTemplate.txt */; };
+		4FE2613517E687B10005294A /* SectorStatsHeader.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4FE2613317E687B00005294A /* SectorStatsHeader.txt */; };
+		4FE2613617E687B10005294A /* SectorStatsTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4FE2613417E687B10005294A /* SectorStatsTemplate.txt */; };
+		4FE2613917E695B40005294A /* EndocardialSurfaceHeader.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4FE2613717E695B30005294A /* EndocardialSurfaceHeader.txt */; };
+		4FE2613A17E695B40005294A /* EndocardialSurfaceTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4FE2613817E695B30005294A /* EndocardialSurfaceTemplate.txt */; };
+		4FE667B61A59C52800B60CE9 /* CMRSegToolsBEASPointStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE667B51A59C52800B60CE9 /* CMRSegToolsBEASPointStep.m */; };
+		4FEA217C179F12BC0062B7B1 /* CMRSegToolsAngleWiperStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEA217B179F12BC0062B7B1 /* CMRSegToolsAngleWiperStep.m */; };
+		4FEBEB7B1799587600D8A290 /* N3BezierPathAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEBEB7A1799587600D8A290 /* N3BezierPathAdditions.m */; };
+		71093EC21CDA3BE100FDB9A9 /* CMRT1Preprocessing.m in Sources */ = {isa = PBXBuildFile; fileRef = 71093EC11CDA3BE100FDB9A9 /* CMRT1Preprocessing.m */; };
+		712F625E1B4BFAA1004AC1AE /* CMRActivityButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 712F625D1B4BFAA1004AC1AE /* CMRActivityButton.m */; };
+		712F62611B4C1ACC004AC1AE /* CMRImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 712F62601B4C1ACC004AC1AE /* CMRImageButton.m */; };
+		712F62631B4C1D86004AC1AE /* Bins.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 712F62621B4C1D86004AC1AE /* Bins.pdf */; };
+		715588AD1E4DBE1500FFFED6 /* CMRSegTools+Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 715588AC1E4DBE1500FFFED6 /* CMRSegTools+Constants.m */; };
+		7157F3C11CE23BD3007E1FC6 /* CMRWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7157F3C01CE23BD3007E1FC6 /* CMRWindowController.m */; };
+		7157F3C31CE30E39007E1FC6 /* CMRT1Preprocessing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7157F3C21CE30E39007E1FC6 /* CMRT1Preprocessing.mm */; };
+		715E5CC520035A00009552D0 /* CMRHistogramWindowController+Export.mm in Sources */ = {isa = PBXBuildFile; fileRef = 715E5CC420035A00009552D0 /* CMRHistogramWindowController+Export.mm */; };
+		715E5CC8200362A1009552D0 /* CMRMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 715E5CC7200362A1009552D0 /* CMRMenuButton.m */; };
+		71DA77D61E2FB92A00819759 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DA77D41E2FB92A00819759 /* libcrypto.a */; };
+		71DA77D71E2FB92A00819759 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DA77D51E2FB92A00819759 /* libssl.a */; };
+		71E294B41E309F6E00990ADD /* OsiriX+CMRSegTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E294B31E309F6E00990ADD /* OsiriX+CMRSegTools.m */; };
+		EF0C1E7F1C7DC2E000E6EE06 /* CMRSegToolsDEMOProperties.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF0C1E7E1C7DC2E000E6EE06 /* CMRSegToolsDEMOProperties.plist */; };
+		EF95098C1B67C7D700D5969E /* HMRFalpha.mm in Sources */ = {isa = PBXBuildFile; fileRef = EF95098B1B67C7D700D5969E /* HMRFalpha.mm */; };
+		EF9B1A4E18E2BC5D0057AA42 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9B1A4D18E2BC5D0057AA42 /* NSString+Utils.m */; };
+		EF9B1A5018E2C71C0057AA42 /* CMRSegToolsActivationCodeWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF9B1A4F18E2C71C0057AA42 /* CMRSegToolsActivationCodeWindow.xib */; };
+		EF9B1A5318E2C8980057AA42 /* CMRSegToolsActivationCodeWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9B1A5218E2C8980057AA42 /* CMRSegToolsActivationCodeWindowController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7165ABE72059643D0061B619 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F24E93A142E290300A8F60A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7165ABDC205961270061B619;
+			remoteInfo = Submodules;
+		};
+		7165ABEA205964680061B619 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F24E93A142E290300A8F60A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7165ABE22059641A0061B619;
+			remoteInfo = DCMTK;
+		};
+		7165ABF020596C150061B619 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F24E93A142E290300A8F60A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7165ABDC205961270061B619;
+			remoteInfo = Submodules;
+		};
+		7165ABF420596C3D0061B619 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F24E93A142E290300A8F60A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7165ABEC20596C0C0061B619;
+			remoteInfo = VTK;
+		};
+		7165ABFA20596F000061B619 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F24E93A142E290300A8F60A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7165ABDC205961270061B619;
+			remoteInfo = Submodules;
+		};
+		7165ABFC20596F050061B619 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F24E93A142E290300A8F60A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7165ABF620596EF90061B619;
+			remoteInfo = ITK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		103821EF17BB942F006234EE /* hmrfEm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmrfEm.h; sourceTree = "<group>"; };
+		103821F017BB942F006234EE /* hmrfEm.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = hmrfEm.mm; sourceTree = "<group>"; };
+		104DEC0D176B47DE00556051 /* hsu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hsu.h; sourceTree = "<group>"; };
+		104DEC0E176B47DE00556051 /* hsu.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = hsu.mm; sourceTree = "<group>"; };
+		10572402172E91D8001F1E27 /* CMRHistogramWindowController+Segmentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMRHistogramWindowController+Segmentation.h"; sourceTree = "<group>"; };
+		10572403172E91D8001F1E27 /* CMRHistogramWindowController+Segmentation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "CMRHistogramWindowController+Segmentation.mm"; sourceTree = "<group>"; };
+		10725A77172FC46A00561EB5 /* CMRHistogramWindowController+Importer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMRHistogramWindowController+Importer.h"; sourceTree = "<group>"; };
+		10725A78172FC46A00561EB5 /* CMRHistogramWindowController+Importer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CMRHistogramWindowController+Importer.m"; sourceTree = "<group>"; };
+		10725A7B172FCE2E00561EB5 /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		10725A7C172FCE2E00561EB5 /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
+		108C5A6A17BA5508000E9B00 /* gaussianMixtureModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gaussianMixtureModel.h; sourceTree = "<group>"; };
+		108C5A6B17BA5508000E9B00 /* gaussianMixtureModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = gaussianMixtureModel.mm; sourceTree = "<group>"; };
+		4F16EB2D16666B3900A8BFF7 /* BEAS2DPolarCoupled.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BEAS2DPolarCoupled.cxx; sourceTree = "<group>"; };
+		4F16EB2E16666B3900A8BFF7 /* BEAS2DPolarCoupled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEAS2DPolarCoupled.h; sourceTree = "<group>"; };
+		4F16EB2F16666B3900A8BFF7 /* DoubleImageAccess.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DoubleImageAccess.cxx; sourceTree = "<group>"; };
+		4F16EB3016666B3900A8BFF7 /* DoubleImageAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleImageAccess.h; sourceTree = "<group>"; };
+		4F16EB3116666B3900A8BFF7 /* Local2PhasesBEAS2DPolarCoupled.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Local2PhasesBEAS2DPolarCoupled.cxx; sourceTree = "<group>"; };
+		4F16EB3216666B3900A8BFF7 /* Local2PhasesBEAS2DPolarCoupled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Local2PhasesBEAS2DPolarCoupled.h; sourceTree = "<group>"; };
+		4F16EB3316666B3900A8BFF7 /* PointAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointAccess.h; sourceTree = "<group>"; };
+		4F16EB3416666B3900A8BFF7 /* Vec.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vec.cxx; sourceTree = "<group>"; };
+		4F16EB3516666B3900A8BFF7 /* Vec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vec.h; sourceTree = "<group>"; };
+		4F16EB3616666B3900A8BFF7 /* vtkOptimizedImageData.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vtkOptimizedImageData.cxx; sourceTree = "<group>"; };
+		4F16EB3716666B3900A8BFF7 /* vtkOptimizedImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vtkOptimizedImageData.h; sourceTree = "<group>"; };
+		4F16EB4516666E8100A8BFF7 /* CMRHistogramWindowController+BEASSegmenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMRHistogramWindowController+BEASSegmenter.h"; sourceTree = "<group>"; };
+		4F16EB4616666E8100A8BFF7 /* CMRHistogramWindowController+BEASSegmenter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "CMRHistogramWindowController+BEASSegmenter.mm"; sourceTree = "<group>"; };
+		4F24E943142E290400A8F60A /* CMRSegTools.osirixplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMRSegTools.osirixplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F24E946142E290400A8F60A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4F24E949142E290400A8F60A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4F24E94A142E290400A8F60A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4F24E94B142E290400A8F60A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4F24E94E142E290400A8F60A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F24E950142E290400A8F60A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4F24E952142E290400A8F60A /* CMRSegTools-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "CMRSegTools-Prefix.pch"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		4F24E95B142E292600A8F60A /* CMRSegTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRSegTools.h; sourceTree = "<group>"; };
+		4F24E95C142E292600A8F60A /* CMRSegTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRSegTools.m; sourceTree = "<group>"; };
+		4F24E967142E297000A8F60A /* OsiriX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OsiriX.framework; path = "OsiriX-API/OsiriX.framework"; sourceTree = "<group>"; };
+		4F38918616F9F2EA0011AD38 /* CMRSegToolsGrowRegionStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRSegToolsGrowRegionStep.h; sourceTree = "<group>"; };
+		4F38918716F9F2EA0011AD38 /* CMRSegToolsGrowRegionStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRSegToolsGrowRegionStep.m; sourceTree = "<group>"; };
+		4F52E75B16270BA2004C2F96 /* CMRHistogramWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRHistogramWindowController.h; sourceTree = "<group>"; };
+		4F52E75C16270BA2004C2F96 /* CMRHistogramWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRHistogramWindowController.m; sourceTree = "<group>"; };
+		4F52E75D16270BA2004C2F96 /* CMRHistogramWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMRHistogramWindowController.xib; sourceTree = "<group>"; };
+		4F52E76116270D0A004C2F96 /* CMRHistogramView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRHistogramView.h; sourceTree = "<group>"; };
+		4F52E76216270D0A004C2F96 /* CMRHistogramView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRHistogramView.m; sourceTree = "<group>"; };
+		4F8BFD1B1795AB82008F7417 /* CMRHiResFloatVolumeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRHiResFloatVolumeData.h; sourceTree = "<group>"; };
+		4F8BFD1C1795AB82008F7417 /* CMRHiResFloatVolumeData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRHiResFloatVolumeData.m; sourceTree = "<group>"; };
+		4F8BFD1E17982EB6008F7417 /* CMRTextROI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRTextROI.h; sourceTree = "<group>"; };
+		4F8BFD1F17982EB6008F7417 /* CMRTextROI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRTextROI.m; sourceTree = "<group>"; };
+		4F97C25D169AC5390027B365 /* CMRSegToolsStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRSegToolsStep.h; sourceTree = "<group>"; };
+		4F97C25E169AC5390027B365 /* CMRSegToolsStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRSegToolsStep.m; sourceTree = "<group>"; };
+		4F97C261169AC63A0027B365 /* CMRSegToolsDrawROIStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRSegToolsDrawROIStep.h; sourceTree = "<group>"; };
+		4F97C262169AC63A0027B365 /* CMRSegToolsDrawROIStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRSegToolsDrawROIStep.m; sourceTree = "<group>"; };
+		4FAFA50B180DC03E00D74B8A /* CMRSegToolsPreferencePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRSegToolsPreferencePanel.h; sourceTree = "<group>"; };
+		4FAFA50C180DC03E00D74B8A /* CMRSegToolsPreferencePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRSegToolsPreferencePanel.m; sourceTree = "<group>"; };
+		4FAFA50E180DC09400D74B8A /* CMRSegToolsPreferencePanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMRSegToolsPreferencePanel.xib; sourceTree = "<group>"; };
+		4FB983BA17295D790078AA17 /* BEAS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BEAS.png; sourceTree = "<group>"; };
+		4FB983BB17295D790078AA17 /* Draw Endocardium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Draw Endocardium.png"; sourceTree = "<group>"; };
+		4FB983BC17295D790078AA17 /* Draw Epicardium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Draw Epicardium.png"; sourceTree = "<group>"; };
+		4FB983BD17295D790078AA17 /* Draw Exclude Region.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Draw Exclude Region.png"; sourceTree = "<group>"; };
+		4FB983BE17295D790078AA17 /* Draw Include Region.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Draw Include Region.png"; sourceTree = "<group>"; };
+		4FB983BF17295D790078AA17 /* Draw No-Reflow Region.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Draw No-Reflow Region.png"; sourceTree = "<group>"; };
+		4FB983C017295D790078AA17 /* Draw Remote Region.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Draw Remote Region.png"; sourceTree = "<group>"; };
+		4FB983C117295D790078AA17 /* Grow Include Region.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Grow Include Region.png"; sourceTree = "<group>"; };
+		4FB983C217295D790078AA17 /* Grow No-Reflow Region.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Grow No-Reflow Region.png"; sourceTree = "<group>"; };
+		4FB983C317295D790078AA17 /* Quick Draw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quick Draw.png"; sourceTree = "<group>"; };
+		4FCC398716FA2005001FEA40 /* CMRSegToolsQuickDrawStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRSegToolsQuickDrawStep.h; sourceTree = "<group>"; };
+		4FCC398816FA2006001FEA40 /* CMRSegToolsQuickDrawStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRSegToolsQuickDrawStep.m; sourceTree = "<group>"; };
+		4FCC398A16FB296B001FEA40 /* CMRSegToolsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CMRSegToolsIcon.png; sourceTree = "<group>"; };
+		4FE2612F17E662E00005294A /* ExportTemplate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ExportTemplate.txt; sourceTree = "<group>"; };
+		4FE2613117E674800005294A /* ExtendedReportTemplate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ExtendedReportTemplate.txt; sourceTree = "<group>"; };
+		4FE2613317E687B00005294A /* SectorStatsHeader.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SectorStatsHeader.txt; sourceTree = "<group>"; };
+		4FE2613417E687B10005294A /* SectorStatsTemplate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SectorStatsTemplate.txt; sourceTree = "<group>"; };
+		4FE2613717E695B30005294A /* EndocardialSurfaceHeader.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EndocardialSurfaceHeader.txt; sourceTree = "<group>"; };
+		4FE2613817E695B30005294A /* EndocardialSurfaceTemplate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EndocardialSurfaceTemplate.txt; sourceTree = "<group>"; };
+		4FE667B41A59C52800B60CE9 /* CMRSegToolsBEASPointStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRSegToolsBEASPointStep.h; sourceTree = "<group>"; };
+		4FE667B51A59C52800B60CE9 /* CMRSegToolsBEASPointStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRSegToolsBEASPointStep.m; sourceTree = "<group>"; };
+		4FEA217A179F12BC0062B7B1 /* CMRSegToolsAngleWiperStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRSegToolsAngleWiperStep.h; sourceTree = "<group>"; };
+		4FEA217B179F12BC0062B7B1 /* CMRSegToolsAngleWiperStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRSegToolsAngleWiperStep.m; sourceTree = "<group>"; };
+		4FEBEB791799587600D8A290 /* N3BezierPathAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = N3BezierPathAdditions.h; sourceTree = "<group>"; };
+		4FEBEB7A1799587600D8A290 /* N3BezierPathAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = N3BezierPathAdditions.m; sourceTree = "<group>"; };
+		71093EC01CDA3BE100FDB9A9 /* CMRT1Preprocessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRT1Preprocessing.h; sourceTree = "<group>"; };
+		71093EC11CDA3BE100FDB9A9 /* CMRT1Preprocessing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRT1Preprocessing.m; sourceTree = "<group>"; };
+		711864941E36132700CD14EC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		712F625C1B4BFAA1004AC1AE /* CMRActivityButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRActivityButton.h; sourceTree = "<group>"; };
+		712F625D1B4BFAA1004AC1AE /* CMRActivityButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRActivityButton.m; sourceTree = "<group>"; };
+		712F625F1B4C1ACC004AC1AE /* CMRImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRImageButton.h; sourceTree = "<group>"; };
+		712F62601B4C1ACC004AC1AE /* CMRImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRImageButton.m; sourceTree = "<group>"; };
+		712F62621B4C1D86004AC1AE /* Bins.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Bins.pdf; sourceTree = "<group>"; };
+		71354AA31E363E12007CE7BA /* CMRSegTools-DEBUG.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "CMRSegTools-DEBUG.xcconfig"; sourceTree = "<group>"; };
+		715588AB1E4DBE1500FFFED6 /* CMRSegTools+Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMRSegTools+Constants.h"; sourceTree = "<group>"; };
+		715588AC1E4DBE1500FFFED6 /* CMRSegTools+Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CMRSegTools+Constants.m"; sourceTree = "<group>"; };
+		7157F3BF1CE23BD3007E1FC6 /* CMRWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRWindowController.h; sourceTree = "<group>"; };
+		7157F3C01CE23BD3007E1FC6 /* CMRWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRWindowController.m; sourceTree = "<group>"; };
+		7157F3C21CE30E39007E1FC6 /* CMRT1Preprocessing.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CMRT1Preprocessing.mm; sourceTree = "<group>"; };
+		715E5CC320035A00009552D0 /* CMRHistogramWindowController+Export.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CMRHistogramWindowController+Export.h"; sourceTree = "<group>"; };
+		715E5CC420035A00009552D0 /* CMRHistogramWindowController+Export.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "CMRHistogramWindowController+Export.mm"; sourceTree = "<group>"; };
+		715E5CC6200362A1009552D0 /* CMRMenuButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMRMenuButton.h; sourceTree = "<group>"; };
+		715E5CC7200362A1009552D0 /* CMRMenuButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMRMenuButton.m; sourceTree = "<group>"; };
+		7165ABDB205960C50061B619 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Scripts; path = CMRSegTools/Scripts; sourceTree = "<group>"; };
+		7184F4141E324B0600E58FC4 /* xcode-archive-post.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "xcode-archive-post.sh"; sourceTree = "<group>"; };
+		71DA77D41E2FB92A00819759 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = openssl/libs/libcrypto.a; sourceTree = "<group>"; };
+		71DA77D51E2FB92A00819759 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = openssl/libs/libssl.a; sourceTree = "<group>"; };
+		71E294B21E309F6E00990ADD /* OsiriX+CMRSegTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OsiriX+CMRSegTools.h"; sourceTree = "<group>"; };
+		71E294B31E309F6E00990ADD /* OsiriX+CMRSegTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OsiriX+CMRSegTools.m"; sourceTree = "<group>"; };
+		EF0C1E7E1C7DC2E000E6EE06 /* CMRSegToolsDEMOProperties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CMRSegToolsDEMOProperties.plist; sourceTree = "<group>"; };
+		EF95098A1B67C7D700D5969E /* HMRFalpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMRFalpha.h; sourceTree = "<group>"; };
+		EF95098B1B67C7D700D5969E /* HMRFalpha.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HMRFalpha.mm; sourceTree = "<group>"; };
+		EF9B1A4C18E2BC5D0057AA42 /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		EF9B1A4D18E2BC5D0057AA42 /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		EF9B1A4F18E2C71C0057AA42 /* CMRSegToolsActivationCodeWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMRSegToolsActivationCodeWindow.xib; sourceTree = "<group>"; };
+		EF9B1A5118E2C8980057AA42 /* CMRSegToolsActivationCodeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRSegToolsActivationCodeWindowController.h; sourceTree = "<group>"; };
+		EF9B1A5218E2C8980057AA42 /* CMRSegToolsActivationCodeWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRSegToolsActivationCodeWindowController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F24E940142E290400A8F60A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F24E947142E290400A8F60A /* Cocoa.framework in Frameworks */,
+				4F24E968142E297000A8F60A /* OsiriX.framework in Frameworks */,
+				71DA77D71E2FB92A00819759 /* libssl.a in Frameworks */,
+				71DA77D61E2FB92A00819759 /* libcrypto.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		103821EE17BB9406006234EE /* HMRF-EM */ = {
+			isa = PBXGroup;
+			children = (
+				EF95098A1B67C7D700D5969E /* HMRFalpha.h */,
+				EF95098B1B67C7D700D5969E /* HMRFalpha.mm */,
+				103821EF17BB942F006234EE /* hmrfEm.h */,
+				103821F017BB942F006234EE /* hmrfEm.mm */,
+			);
+			name = "HMRF-EM";
+			sourceTree = "<group>";
+		};
+		104DEC0C176B47AB00556051 /* feature analysis */ = {
+			isa = PBXGroup;
+			children = (
+				104DEC0D176B47DE00556051 /* hsu.h */,
+				104DEC0E176B47DE00556051 /* hsu.mm */,
+			);
+			name = "feature analysis";
+			sourceTree = "<group>";
+		};
+		10725A7A172FCE0D00561EB5 /* ImportROI */ = {
+			isa = PBXGroup;
+			children = (
+				10725A7B172FCE2E00561EB5 /* Parser.h */,
+				10725A7C172FCE2E00561EB5 /* Parser.m */,
+			);
+			name = ImportROI;
+			sourceTree = "<group>";
+		};
+		10C171BF174CD14400AF74A8 /* GaussianMixtureModel */ = {
+			isa = PBXGroup;
+			children = (
+				108C5A6A17BA5508000E9B00 /* gaussianMixtureModel.h */,
+				108C5A6B17BA5508000E9B00 /* gaussianMixtureModel.mm */,
+			);
+			name = GaussianMixtureModel;
+			sourceTree = "<group>";
+		};
+		4F16EB2B16666AE700A8BFF7 /* BEASSegmentation */ = {
+			isa = PBXGroup;
+			children = (
+				4F16EB2D16666B3900A8BFF7 /* BEAS2DPolarCoupled.cxx */,
+				4F16EB2E16666B3900A8BFF7 /* BEAS2DPolarCoupled.h */,
+				4F16EB2F16666B3900A8BFF7 /* DoubleImageAccess.cxx */,
+				4F16EB3016666B3900A8BFF7 /* DoubleImageAccess.h */,
+				4F16EB3116666B3900A8BFF7 /* Local2PhasesBEAS2DPolarCoupled.cxx */,
+				4F16EB3216666B3900A8BFF7 /* Local2PhasesBEAS2DPolarCoupled.h */,
+				4F16EB3316666B3900A8BFF7 /* PointAccess.h */,
+				4F16EB3416666B3900A8BFF7 /* Vec.cxx */,
+				4F16EB3516666B3900A8BFF7 /* Vec.h */,
+				4F16EB3616666B3900A8BFF7 /* vtkOptimizedImageData.cxx */,
+				4F16EB3716666B3900A8BFF7 /* vtkOptimizedImageData.h */,
+			);
+			path = BEASSegmentation;
+			sourceTree = "<group>";
+		};
+		4F24E938142E290300A8F60A = {
+			isa = PBXGroup;
+			children = (
+				711864941E36132700CD14EC /* README.md */,
+				4F24E94E142E290400A8F60A /* Info.plist */,
+				7184F4141E324B0600E58FC4 /* xcode-archive-post.sh */,
+				4F24E94C142E290400A8F60A /* CMRSegTools */,
+				71354AA11E363DF1007CE7BA /* Config */,
+				7165ABDB205960C50061B619 /* Scripts */,
+				4F24E945142E290400A8F60A /* Frameworks */,
+				4F24E944142E290400A8F60A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F24E944142E290400A8F60A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F24E943142E290400A8F60A /* CMRSegTools.osirixplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F24E945142E290400A8F60A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F24E967142E297000A8F60A /* OsiriX.framework */,
+				7118648F1E36040800CD14EC /* OpenSSL */,
+				4F24E946142E290400A8F60A /* Cocoa.framework */,
+				4F24E949142E290400A8F60A /* AppKit.framework */,
+				4F24E94A142E290400A8F60A /* CoreData.framework */,
+				4F24E94B142E290400A8F60A /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F24E94C142E290400A8F60A /* CMRSegTools */ = {
+			isa = PBXGroup;
+			children = (
+				4F24E952142E290400A8F60A /* CMRSegTools-Prefix.pch */,
+				4F24E94D142E290400A8F60A /* Resources */,
+				7165ABDA205960070061B619 /* Sources */,
+			);
+			path = CMRSegTools;
+			sourceTree = "<group>";
+		};
+		4F24E94D142E290400A8F60A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF0C1E7E1C7DC2E000E6EE06 /* CMRSegToolsDEMOProperties.plist */,
+				4FE2613717E695B30005294A /* EndocardialSurfaceHeader.txt */,
+				4FE2613817E695B30005294A /* EndocardialSurfaceTemplate.txt */,
+				4FE2613317E687B00005294A /* SectorStatsHeader.txt */,
+				4FE2613417E687B10005294A /* SectorStatsTemplate.txt */,
+				4FE2613117E674800005294A /* ExtendedReportTemplate.txt */,
+				4FE2612F17E662E00005294A /* ExportTemplate.txt */,
+				4FB983B917295D650078AA17 /* Button Icons */,
+				4FCC398A16FB296B001FEA40 /* CMRSegToolsIcon.png */,
+				4F24E94F142E290400A8F60A /* InfoPlist.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4F97C264169AC6450027B365 /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				4F97C25D169AC5390027B365 /* CMRSegToolsStep.h */,
+				4F97C25E169AC5390027B365 /* CMRSegToolsStep.m */,
+				4F97C261169AC63A0027B365 /* CMRSegToolsDrawROIStep.h */,
+				4F97C262169AC63A0027B365 /* CMRSegToolsDrawROIStep.m */,
+				4F38918616F9F2EA0011AD38 /* CMRSegToolsGrowRegionStep.h */,
+				4F38918716F9F2EA0011AD38 /* CMRSegToolsGrowRegionStep.m */,
+				4FCC398716FA2005001FEA40 /* CMRSegToolsQuickDrawStep.h */,
+				4FCC398816FA2006001FEA40 /* CMRSegToolsQuickDrawStep.m */,
+				4FEA217A179F12BC0062B7B1 /* CMRSegToolsAngleWiperStep.h */,
+				4FEA217B179F12BC0062B7B1 /* CMRSegToolsAngleWiperStep.m */,
+				4FE667B41A59C52800B60CE9 /* CMRSegToolsBEASPointStep.h */,
+				4FE667B51A59C52800B60CE9 /* CMRSegToolsBEASPointStep.m */,
+			);
+			name = Steps;
+			sourceTree = "<group>";
+		};
+		4FB983B917295D650078AA17 /* Button Icons */ = {
+			isa = PBXGroup;
+			children = (
+				4FB983BA17295D790078AA17 /* BEAS.png */,
+				4FB983BB17295D790078AA17 /* Draw Endocardium.png */,
+				4FB983BC17295D790078AA17 /* Draw Epicardium.png */,
+				4FB983BD17295D790078AA17 /* Draw Exclude Region.png */,
+				4FB983BE17295D790078AA17 /* Draw Include Region.png */,
+				4FB983BF17295D790078AA17 /* Draw No-Reflow Region.png */,
+				4FB983C017295D790078AA17 /* Draw Remote Region.png */,
+				4FB983C117295D790078AA17 /* Grow Include Region.png */,
+				4FB983C217295D790078AA17 /* Grow No-Reflow Region.png */,
+				4FB983C317295D790078AA17 /* Quick Draw.png */,
+				712F62621B4C1D86004AC1AE /* Bins.pdf */,
+			);
+			path = "Button Icons";
+			sourceTree = "<group>";
+		};
+		71093EC31CDA3BE800FDB9A9 /* CMRT1PreProcessing */ = {
+			isa = PBXGroup;
+			children = (
+				71093EC01CDA3BE100FDB9A9 /* CMRT1Preprocessing.h */,
+				71093EC11CDA3BE100FDB9A9 /* CMRT1Preprocessing.m */,
+				7157F3C21CE30E39007E1FC6 /* CMRT1Preprocessing.mm */,
+				7157F3BF1CE23BD3007E1FC6 /* CMRWindowController.h */,
+				7157F3C01CE23BD3007E1FC6 /* CMRWindowController.m */,
+			);
+			name = CMRT1PreProcessing;
+			sourceTree = "<group>";
+		};
+		7118648F1E36040800CD14EC /* OpenSSL */ = {
+			isa = PBXGroup;
+			children = (
+				71DA77D41E2FB92A00819759 /* libcrypto.a */,
+				71DA77D51E2FB92A00819759 /* libssl.a */,
+			);
+			name = OpenSSL;
+			sourceTree = "<group>";
+		};
+		71354AA11E363DF1007CE7BA /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				71354AA31E363E12007CE7BA /* CMRSegTools-DEBUG.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		7148B0541A78ECD2004F6314 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				712F625C1B4BFAA1004AC1AE /* CMRActivityButton.h */,
+				712F625D1B4BFAA1004AC1AE /* CMRActivityButton.m */,
+				712F625F1B4C1ACC004AC1AE /* CMRImageButton.h */,
+				712F62601B4C1ACC004AC1AE /* CMRImageButton.m */,
+				715E5CC6200362A1009552D0 /* CMRMenuButton.h */,
+				715E5CC7200362A1009552D0 /* CMRMenuButton.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		7165ABDA205960070061B619 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4F24E95B142E292600A8F60A /* CMRSegTools.h */,
+				4F24E95C142E292600A8F60A /* CMRSegTools.m */,
+				715588AB1E4DBE1500FFFED6 /* CMRSegTools+Constants.h */,
+				715588AC1E4DBE1500FFFED6 /* CMRSegTools+Constants.m */,
+				71E294B21E309F6E00990ADD /* OsiriX+CMRSegTools.h */,
+				71E294B31E309F6E00990ADD /* OsiriX+CMRSegTools.m */,
+				71093EC31CDA3BE800FDB9A9 /* CMRT1PreProcessing */,
+				4F52E75D16270BA2004C2F96 /* CMRHistogramWindowController.xib */,
+				4F52E75B16270BA2004C2F96 /* CMRHistogramWindowController.h */,
+				4F52E75C16270BA2004C2F96 /* CMRHistogramWindowController.m */,
+				4F16EB4516666E8100A8BFF7 /* CMRHistogramWindowController+BEASSegmenter.h */,
+				4F16EB4616666E8100A8BFF7 /* CMRHistogramWindowController+BEASSegmenter.mm */,
+				10572402172E91D8001F1E27 /* CMRHistogramWindowController+Segmentation.h */,
+				10572403172E91D8001F1E27 /* CMRHistogramWindowController+Segmentation.mm */,
+				10725A77172FC46A00561EB5 /* CMRHistogramWindowController+Importer.h */,
+				10725A78172FC46A00561EB5 /* CMRHistogramWindowController+Importer.m */,
+				715E5CC320035A00009552D0 /* CMRHistogramWindowController+Export.h */,
+				715E5CC420035A00009552D0 /* CMRHistogramWindowController+Export.mm */,
+				4F52E76116270D0A004C2F96 /* CMRHistogramView.h */,
+				4F52E76216270D0A004C2F96 /* CMRHistogramView.m */,
+				4F8BFD1B1795AB82008F7417 /* CMRHiResFloatVolumeData.h */,
+				4F8BFD1C1795AB82008F7417 /* CMRHiResFloatVolumeData.m */,
+				4F8BFD1E17982EB6008F7417 /* CMRTextROI.h */,
+				4F8BFD1F17982EB6008F7417 /* CMRTextROI.m */,
+				4FEBEB791799587600D8A290 /* N3BezierPathAdditions.h */,
+				4FEBEB7A1799587600D8A290 /* N3BezierPathAdditions.m */,
+				71F0B9DF1CE069BD00AE4272 /* Preferences */,
+				EF9B1A4C18E2BC5D0057AA42 /* NSString+Utils.h */,
+				EF9B1A4D18E2BC5D0057AA42 /* NSString+Utils.m */,
+				4F97C264169AC6450027B365 /* Steps */,
+				EF9B1A4F18E2C71C0057AA42 /* CMRSegToolsActivationCodeWindow.xib */,
+				EF9B1A5118E2C8980057AA42 /* CMRSegToolsActivationCodeWindowController.h */,
+				EF9B1A5218E2C8980057AA42 /* CMRSegToolsActivationCodeWindowController.m */,
+				7148B0541A78ECD2004F6314 /* Views */,
+				103821EE17BB9406006234EE /* HMRF-EM */,
+				104DEC0C176B47AB00556051 /* feature analysis */,
+				10725A7A172FCE0D00561EB5 /* ImportROI */,
+				4F16EB2B16666AE700A8BFF7 /* BEASSegmentation */,
+				10C171BF174CD14400AF74A8 /* GaussianMixtureModel */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		71F0B9DF1CE069BD00AE4272 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				4FAFA50B180DC03E00D74B8A /* CMRSegToolsPreferencePanel.h */,
+				4FAFA50C180DC03E00D74B8A /* CMRSegToolsPreferencePanel.m */,
+				4FAFA50E180DC09400D74B8A /* CMRSegToolsPreferencePanel.xib */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F24E942142E290400A8F60A /* CMRSegTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F24E955142E290400A8F60A /* Build configuration list for PBXNativeTarget "CMRSegTools" */;
+			buildPhases = (
+				7157F3C71CE385D4007E1FC6 /* Check for OsiriX.framework */,
+				4F24E93F142E290400A8F60A /* Sources */,
+				4F24E940142E290400A8F60A /* Frameworks */,
+				4F24E941142E290400A8F60A /* Resources */,
+				7158A2C81C61E0B6009E4085 /* Versioning */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7165ABEB205964680061B619 /* PBXTargetDependency */,
+				7165ABF520596C3D0061B619 /* PBXTargetDependency */,
+				7165ABFD20596F050061B619 /* PBXTargetDependency */,
+			);
+			name = CMRSegTools;
+			productName = CMRSegToolsPlugin;
+			productReference = 4F24E943142E290400A8F60A /* CMRSegTools.osirixplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F24E93A142E290300A8F60A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CMRSegTools;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Creatis;
+				TargetAttributes = {
+					7165ABDC205961270061B619 = {
+						CreatedOnToolsVersion = 9.2;
+					};
+					7165ABE22059641A0061B619 = {
+						CreatedOnToolsVersion = 9.2;
+					};
+					7165ABEC20596C0C0061B619 = {
+						CreatedOnToolsVersion = 9.2;
+					};
+					7165ABF620596EF90061B619 = {
+						CreatedOnToolsVersion = 9.2;
+					};
+				};
+			};
+			buildConfigurationList = 4F24E93D142E290300A8F60A /* Build configuration list for PBXProject "CMRSegTools" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4F24E938142E290300A8F60A;
+			productRefGroup = 4F24E944142E290400A8F60A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F24E942142E290400A8F60A /* CMRSegTools */,
+				7165ABE22059641A0061B619 /* DCMTK */,
+				7165ABEC20596C0C0061B619 /* VTK */,
+				7165ABF620596EF90061B619 /* ITK */,
+				7165ABDC205961270061B619 /* Submodules */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F24E941142E290400A8F60A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9B1A5018E2C71C0057AA42 /* CMRSegToolsActivationCodeWindow.xib in Resources */,
+				4F24E951142E290400A8F60A /* InfoPlist.strings in Resources */,
+				4F52E75F16270BA2004C2F96 /* CMRHistogramWindowController.xib in Resources */,
+				4FCC398B16FB296B001FEA40 /* CMRSegToolsIcon.png in Resources */,
+				4FB983C417295D790078AA17 /* BEAS.png in Resources */,
+				4FB983C517295D790078AA17 /* Draw Endocardium.png in Resources */,
+				4FB983C617295D790078AA17 /* Draw Epicardium.png in Resources */,
+				4FAFA50F180DC09400D74B8A /* CMRSegToolsPreferencePanel.xib in Resources */,
+				4FB983C717295D790078AA17 /* Draw Exclude Region.png in Resources */,
+				4FB983C817295D790078AA17 /* Draw Include Region.png in Resources */,
+				4FB983C917295D790078AA17 /* Draw No-Reflow Region.png in Resources */,
+				4FB983CA17295D790078AA17 /* Draw Remote Region.png in Resources */,
+				4FB983CB17295D790078AA17 /* Grow Include Region.png in Resources */,
+				4FB983CC17295D790078AA17 /* Grow No-Reflow Region.png in Resources */,
+				712F62631B4C1D86004AC1AE /* Bins.pdf in Resources */,
+				4FB983CD17295D790078AA17 /* Quick Draw.png in Resources */,
+				4FE2613017E662E00005294A /* ExportTemplate.txt in Resources */,
+				4FE2613217E674800005294A /* ExtendedReportTemplate.txt in Resources */,
+				4FE2613517E687B10005294A /* SectorStatsHeader.txt in Resources */,
+				4FE2613617E687B10005294A /* SectorStatsTemplate.txt in Resources */,
+				EF0C1E7F1C7DC2E000E6EE06 /* CMRSegToolsDEMOProperties.plist in Resources */,
+				4FE2613917E695B40005294A /* EndocardialSurfaceHeader.txt in Resources */,
+				4FE2613A17E695B40005294A /* EndocardialSurfaceTemplate.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7157F3C71CE385D4007E1FC6 /* Check for OsiriX.framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check for OsiriX.framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ ! -d \"OsiriX-API/OsiriX.framework\" ]; then\n    echo \"warning: submodule OsiriX-API requires init/update, please wait...\"\n    cd \"OsiriX-API\"\n    git submodule init\n    git submodule update\nfi";
+		};
+		7158A2C81C61E0B6009E4085 /* Versioning */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Versioning;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -o xtrace\n\ncd \"$PROJECT_DIR\"\n\nversion=$(/usr/bin/git describe --tags --dirty --always)\nif [[ ${version:0:1} == \"v\" ]]; then\n    version=${version:1}\nfi\n\nINFOPLIST=\"$BUILT_PRODUCTS_DIR/$INFOPLIST_PATH\"\n\n/usr/libexec/PlistBuddy -c \"Delete :CFBundleVersion\" -c \"Add :CFBundleVersion string '$version'\" \"$INFOPLIST\"\n\nexit 0";
+		};
+		7165ABE1205961470061B619 /* Submodules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Submodules;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "git submodule sync --recursive\ngit submodule update --init --recursive";
+		};
+		7165ABE6205964270061B619 /* CMake */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = CMake;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"CMRSegTools/Scripts/$TARGET_NAME/CMake.sh\"";
+		};
+		7165ABE92059644A0061B619 /* Make */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Make;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"CMRSegTools/Scripts/$TARGET_NAME/Make.sh\"";
+		};
+		7165ABF220596C200061B619 /* CMake */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = CMake;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"CMRSegTools/Scripts/$TARGET_NAME/CMake.sh\"";
+		};
+		7165ABF320596C290061B619 /* Make */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Make;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"CMRSegTools/Scripts/$TARGET_NAME/Make.sh\"";
+		};
+		7165ABFE20596F110061B619 /* CMake */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = CMake;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"CMRSegTools/Scripts/$TARGET_NAME/CMake.sh\"";
+		};
+		7165ABFF20596F190061B619 /* Make */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Make;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"CMRSegTools/Scripts/$TARGET_NAME/Make.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F24E93F142E290400A8F60A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F24E962142E292600A8F60A /* CMRSegTools.m in Sources */,
+				4FAFA50D180DC03E00D74B8A /* CMRSegToolsPreferencePanel.m in Sources */,
+				4F52E75E16270BA2004C2F96 /* CMRHistogramWindowController.m in Sources */,
+				4F52E76316270D0A004C2F96 /* CMRHistogramView.m in Sources */,
+				4F16EB3816666B3900A8BFF7 /* BEAS2DPolarCoupled.cxx in Sources */,
+				4F16EB3916666B3900A8BFF7 /* DoubleImageAccess.cxx in Sources */,
+				4F16EB3A16666B3900A8BFF7 /* Local2PhasesBEAS2DPolarCoupled.cxx in Sources */,
+				4F16EB3B16666B3900A8BFF7 /* Vec.cxx in Sources */,
+				4F16EB3C16666B3900A8BFF7 /* vtkOptimizedImageData.cxx in Sources */,
+				712F625E1B4BFAA1004AC1AE /* CMRActivityButton.m in Sources */,
+				4F16EB4716666E8100A8BFF7 /* CMRHistogramWindowController+BEASSegmenter.mm in Sources */,
+				4F97C25F169AC5390027B365 /* CMRSegToolsStep.m in Sources */,
+				EF9B1A4E18E2BC5D0057AA42 /* NSString+Utils.m in Sources */,
+				4F97C263169AC63A0027B365 /* CMRSegToolsDrawROIStep.m in Sources */,
+				71E294B41E309F6E00990ADD /* OsiriX+CMRSegTools.m in Sources */,
+				715E5CC8200362A1009552D0 /* CMRMenuButton.m in Sources */,
+				7157F3C31CE30E39007E1FC6 /* CMRT1Preprocessing.mm in Sources */,
+				4F38918816F9F2EB0011AD38 /* CMRSegToolsGrowRegionStep.m in Sources */,
+				71093EC21CDA3BE100FDB9A9 /* CMRT1Preprocessing.m in Sources */,
+				4FCC398916FA2006001FEA40 /* CMRSegToolsQuickDrawStep.m in Sources */,
+				712F62611B4C1ACC004AC1AE /* CMRImageButton.m in Sources */,
+				10572404172E91D8001F1E27 /* CMRHistogramWindowController+Segmentation.mm in Sources */,
+				715E5CC520035A00009552D0 /* CMRHistogramWindowController+Export.mm in Sources */,
+				EF9B1A5318E2C8980057AA42 /* CMRSegToolsActivationCodeWindowController.m in Sources */,
+				10725A79172FC46A00561EB5 /* CMRHistogramWindowController+Importer.m in Sources */,
+				10725A7D172FCE2E00561EB5 /* Parser.m in Sources */,
+				104DEC0F176B47DE00556051 /* hsu.mm in Sources */,
+				4F8BFD1D1795AB82008F7417 /* CMRHiResFloatVolumeData.m in Sources */,
+				7157F3C11CE23BD3007E1FC6 /* CMRWindowController.m in Sources */,
+				EF95098C1B67C7D700D5969E /* HMRFalpha.mm in Sources */,
+				4F8BFD2017982EB6008F7417 /* CMRTextROI.m in Sources */,
+				4FEBEB7B1799587600D8A290 /* N3BezierPathAdditions.m in Sources */,
+				715588AD1E4DBE1500FFFED6 /* CMRSegTools+Constants.m in Sources */,
+				4FE667B61A59C52800B60CE9 /* CMRSegToolsBEASPointStep.m in Sources */,
+				4FEA217C179F12BC0062B7B1 /* CMRSegToolsAngleWiperStep.m in Sources */,
+				108C5A6C17BA5508000E9B00 /* gaussianMixtureModel.mm in Sources */,
+				103821F117BB942F006234EE /* hmrfEm.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7165ABE82059643D0061B619 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7165ABDC205961270061B619 /* Submodules */;
+			targetProxy = 7165ABE72059643D0061B619 /* PBXContainerItemProxy */;
+		};
+		7165ABEB205964680061B619 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7165ABE22059641A0061B619 /* DCMTK */;
+			targetProxy = 7165ABEA205964680061B619 /* PBXContainerItemProxy */;
+		};
+		7165ABF120596C150061B619 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7165ABDC205961270061B619 /* Submodules */;
+			targetProxy = 7165ABF020596C150061B619 /* PBXContainerItemProxy */;
+		};
+		7165ABF520596C3D0061B619 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7165ABEC20596C0C0061B619 /* VTK */;
+			targetProxy = 7165ABF420596C3D0061B619 /* PBXContainerItemProxy */;
+		};
+		7165ABFB20596F000061B619 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7165ABDC205961270061B619 /* Submodules */;
+			targetProxy = 7165ABFA20596F000061B619 /* PBXContainerItemProxy */;
+		};
+		7165ABFD20596F050061B619 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7165ABF620596EF90061B619 /* ITK */;
+			targetProxy = 7165ABFC20596F050061B619 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4F24E94F142E290400A8F60A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F24E950142E290400A8F60A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F24E953142E290400A8F60A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/Frameworks @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4F24E954142E290400A8F60A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/Frameworks @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4F24E956142E290400A8F60A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71354AA31E363E12007CE7BA /* CMRSegTools-DEBUG.xcconfig */;
+			buildSettings = {
+				DYNAMIC_LOOKUP_FLAGS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"OsiriX-API",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CMRSegTools/CMRSegTools-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					openssl/include,
+					$CONFIGURATION_TEMP_DIR/DCMTK.build/Install/include,
+					$CONFIGURATION_TEMP_DIR/VTK.build/Install/include,
+					$CONFIGURATION_TEMP_DIR/ITK.build/Install/include,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Application Support/OsiriX/Plugins";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					openssl/libs,
+					$CONFIGURATION_TEMP_DIR/DCMTK.build/Install/wlib,
+					$CONFIGURATION_TEMP_DIR/VTK.build/Install/wlib,
+					$CONFIGURATION_TEMP_DIR/ITK.build/Install/wlib,
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-exported_symbols_list",
+					CMRSegTools/CMRSegTools.exp,
+					"-Wno-deprecated",
+					"$(DYNAMIC_LOOKUP_FLAGS)",
+					"-lDCMTK",
+					"-lVTK",
+					"-lITK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.creatis.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = osirixplugin;
+			};
+			name = Debug;
+		};
+		4F24E957142E290400A8F60A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYNAMIC_LOOKUP_FLAGS = "-undefined dynamic_lookup";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"OsiriX-API",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CMRSegTools/CMRSegTools-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					openssl/include,
+					$CONFIGURATION_TEMP_DIR/DCMTK.build/Install/include,
+					$CONFIGURATION_TEMP_DIR/VTK.build/Install/include,
+					$CONFIGURATION_TEMP_DIR/ITK.build/Install/include,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Application Support/OsiriX/Plugins";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					openssl/libs,
+					$CONFIGURATION_TEMP_DIR/DCMTK.build/Install/wlib,
+					$CONFIGURATION_TEMP_DIR/VTK.build/Install/wlib,
+					$CONFIGURATION_TEMP_DIR/ITK.build/Install/wlib,
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-exported_symbols_list",
+					CMRSegTools/CMRSegTools.exp,
+					"-Wno-deprecated",
+					"$(DYNAMIC_LOOKUP_FLAGS)",
+					"-lDCMTK",
+					"-lVTK",
+					"-lITK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.creatis.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = osirixplugin;
+			};
+			name = Release;
+		};
+		7165ABDE205961270061B619 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7165ABDF205961270061B619 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7165ABE42059641A0061B619 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7165ABE52059641A0061B619 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7165ABEE20596C0C0061B619 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7165ABEF20596C0C0061B619 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7165ABF820596EF90061B619 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7165ABF920596EF90061B619 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F24E93D142E290300A8F60A /* Build configuration list for PBXProject "CMRSegTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F24E953142E290400A8F60A /* Debug */,
+				4F24E954142E290400A8F60A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F24E955142E290400A8F60A /* Build configuration list for PBXNativeTarget "CMRSegTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F24E956142E290400A8F60A /* Debug */,
+				4F24E957142E290400A8F60A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7165ABDD205961270061B619 /* Build configuration list for PBXAggregateTarget "Submodules" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7165ABDE205961270061B619 /* Debug */,
+				7165ABDF205961270061B619 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7165ABE32059641A0061B619 /* Build configuration list for PBXAggregateTarget "DCMTK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7165ABE42059641A0061B619 /* Debug */,
+				7165ABE52059641A0061B619 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7165ABED20596C0C0061B619 /* Build configuration list for PBXAggregateTarget "VTK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7165ABEE20596C0C0061B619 /* Debug */,
+				7165ABEF20596C0C0061B619 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7165ABF720596EF90061B619 /* Build configuration list for PBXAggregateTarget "ITK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7165ABF820596EF90061B619 /* Debug */,
+				7165ABF920596EF90061B619 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F24E93A142E290300A8F60A /* Project object */;
+}

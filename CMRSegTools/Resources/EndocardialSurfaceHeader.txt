@@ -1,0 +1,5 @@
+
+ESA (%)	ESA (cm2)
+600001	600002	600001
+
+Slice Number	Sectors	Mean Transmurality(%)	Max Transmurality(%)	Min Transmurality(%)
